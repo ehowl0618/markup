@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report02</title>
+    <link rel="shortcut icon" href="./image/logo.png" type="image/x-icon">
+    <style>
+
+        /* CSS Reset */
+
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            border: none;
+            padding: 0;
+        }
+
+
+        a{
+            color: #181818;
+            text-decoration: none;
+        }
+
+        img{
+            width: 100%;
+        }
+
+        /* Grid */
+        .col01{ width: 73px; }
+        .col02{ width: 160px; }
+        .col03{ width: 247px; }
+        .col04{ width: 334px; }
+
+
+        /* iPhone 12 Pro : 390 * 844 */
+        #wrap{
+            width: 390px;
+            height: 844px;
+            margin: 0 auto 0 auto;
+            background-color: white;
+        }
+
+        /* HEADER 스타일 시작 */
+        
+        header{
+            width: 390px;
+            height: 86px;
+            padding: 28px;
+        }
+
+        header div{
+            display: inline-block;
+        }
+
+        #hd1{
+            width: 30px;
+            height: 30px;
+            float: left;
+        }
+
+        #hd2{
+            width: 11px;
+            height: 20px;   
+            float: right;
+        }
+
+        /* HEADER 스타일 끝 */
+
+        /* SECTION 스타일 시작 */
+
+        section{
+            width: 390px;
+            height: 672px;
+            padding: 28px;
+        }
+
+        section h2{
+            margin-bottom: 56px;
+            font-family: 'Noto Sans KR';
+            font-size: 30px;
+            font-weight: 900;
+            line-height: 110%;
+            color: #181818;
+        }
+
+        .input-box{
+            height: 221px;
+            background-color: #efefef;
+            border-radius: 20px;
+            padding: 25px 20px 25px 20px;
+        }
+
+        .input-box p{
+            margin-bottom: 40px;
+            font-family: 'Noto Sans KR';
+            font-size: 16px;
+            font-weight: 500;
+            color: #181818;
+        }
+
+        .line{
+            border: #b9b9b9 1px solid;
+            margin-bottom: 30px;
+        }
+
+        .pw-forget{
+            margin: 18px 0 18px 0;
+            font-family: 'Noto Sans KR';
+            font-size: 14px;
+            font-weight: 500;
+            color: #353535;
+            text-align: center;
+        }
+
+        .login-box{
+            height: 44px;
+            padding-top: 9px;
+            background-color: #b80711;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .login-box a{
+            font-family: 'Noto Sans KR';
+            font-size: 16px;
+            font-weight: 700;
+            color: white;
+        }
+
+        /* SECTION 스타일 끝 */
+
+        /* FOOTER 스타일 시작 */
+
+        footer{
+            width: 390px;
+            height: 86px;
+            padding: 30px 0 30px 0;
+        }
+
+        footer h1{
+            font-family: 'Poppins';
+            font-weight: 900;
+            font-size: 18px;
+            color: #181818;
+            text-align: center;
+        }
+
+        /* FOOTER 스타일 끝 */
+
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            <div id="hd1"><a href="./best.html">
+                <img src="./image/logo.png" alt="T 로고"></a>
+            </div>
+
+            <div id="hd2"><a href="./best.html">
+                <img src="./image/back.png" alt="뒤로가기"></a>
+            </div>
+        </header>
+        <section>
+            <div class="sec-contents">
+
+                <h2>로그인을 위해<br>아래 정보를 입력해주세요.</h2>
+
+                <div class="input-box col04">
+                    <p>이메일</p>
+                    <div class="line"></div>
+                    <p>비밀번호</p>
+                    <div class="line no-mg"></div>
+                </div>
+
+                <p class="pw-forget">비밀번호를 잊으셨나요?
+                    <a class="pw-find" href="#"><b>비밀번호 재설정</b></a></p>
+
+                <div class="login-box col04"><a href="#">로그인</a></div>
+
+            </div>
+        </section>
+        <footer>
+            <h1>today's CAKE.</h1>
+        </footer>
+    </div>
+</body>
+</html>
